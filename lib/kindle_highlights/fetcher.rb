@@ -7,10 +7,16 @@ module KindleHighlights
     end
 
     def fetch
-      highlights_page = get_highlights_page
+      fetch_books_from_page(get_highlights_page)
     end
 
     private
+
+    def fetch_books_from_page(page)
+      books = []
+      books << Book.from_page(page)
+      books
+    end
 
     def get_highlights_page
       kindle_home_page = login_to_amazon_kindle
@@ -30,8 +36,8 @@ module KindleHighlights
       @agent ||= Mechanize.new do |a|
         a.user_agent = 'Individueller User-Agent'
         a.user_agent_alias = 'Mac Safari'
-        a.open_timeout = 3
-        a.read_timeout = 4
+        a.open_timeout = 10
+        a.read_timeout = 10
         a.ssl_version = 'SSLv3'
         a.verify_mode = OpenSSL::SSL::VERIFY_NONE
       end

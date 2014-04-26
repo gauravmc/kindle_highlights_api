@@ -9,7 +9,7 @@ require 'pry-rescue/minitest'
 TEST_ROOT = File.expand_path('..', __FILE__)
 
 module FixturePages
-  def fixture_pages(page)
+  def get_page_from_fixtures(page)
     uri = URI("https://anydomain.com/any/path")
     code = "200"
     response = Net::HTTPFound.new(nil, code, nil)
