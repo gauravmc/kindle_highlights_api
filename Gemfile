@@ -4,5 +4,9 @@ source 'https://rubygems.org'
 gemspec
 
 group :development, :test do
+  gem 'mocha'
   gem 'pry'
+  gem 'pry-debugger'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
 end
