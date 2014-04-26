@@ -1,7 +1,7 @@
 require 'mechanize'
 
 module KindleHighlights
-  class BooksFetcher
+  class Fetcher
     def initialize(email, password)
       @email, @password = email, password
     end

@@ -4,4 +4,4 @@ require "logger"
 module KindleHighlights
 end
 
-require_relative 'kindle_highlights/books_fetcher'
+require_relative 'kindle_highlights/fetcher'
