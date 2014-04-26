@@ -1,5 +1,7 @@
 require "kindle_highlights/version"
+require "logger"
 
 module KindleHighlights
-  # Your code goes here...
 end
+
+require_relative 'kindle_highlights/books_fetcher'
