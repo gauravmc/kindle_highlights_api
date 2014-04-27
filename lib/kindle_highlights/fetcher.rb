@@ -14,13 +14,13 @@ module KindleHighlights
 
     def fetch_all_books
       page = get_highlights_page
-      books = []
 
-      while next_book_link = page.link(id: 'nextBookLink') do
-        books << Book.from_page(page)
-        page = next_book_link.click
+      Array.new.tap do |books|
+        while next_book_link = page.link(id: 'nextBookLink') do
+          books << Book.from_page(page)
+          page = next_book_link.click
+        end
       end
-      books
     end
 
     def get_highlights_page
