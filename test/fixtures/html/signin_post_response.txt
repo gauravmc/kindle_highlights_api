@@ -1,0 +1,10 @@
+HTTP/1.1 302 Found
+Server: Server
+Date: Sun, 27 Apr 2014 01:54:16 GMT
+Content-Type: text/html;charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Pragma: No-cache
+Cache-Control: no-cache, must-revalidate
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: https://kindle.amazon.com:443/authenticate/login_callback?wctx=%2F&openid.assoc_handle=amzn_kindle&aToken=5%7CT2bKSa1fbooeUKhUD66YfLW%2F9y13QtHoZfVGvvvOFvdGm0B2k8S%2F1KicIEJBcEOndhbur0Nz46deFCBRUpQM0Y5T7jTcBZWEZEMsr6SJS%2FnJjL%2BG2Nb%2BGEMcGr9Z9ziGENo%2F3bX9KbE0wU22bAGSjoh2394pdqLNdEv06lBhpTCksMqAT0e68klLEGHdjRMxZxQ21Bsr7z%2BsYExu%2FyZdose0qZx2JfRY&openid.claimed_id=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AFS6YC6ZKWAJ64HHNFPQRPE3GO6Q&openid.identity=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AFS6YC6ZKWAJ64HHNFPQRPE3GO6Q&openid.mode=id_res&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.op_endpoint=https%3A%2F%2Fwww.amazon.com%2Fap%2Fsignin&openid.response_nonce=2014-04-27T01%3A54%3A16Z-3355228545486825706&openid.return_to=https%3A%2F%2FkiLocation: httomLocation: https://kindle.amazon.cobaLocation: https://kindle.amazon.com:c_handle%2CaToken%2CLocation: https://kin%2Cmode%2Cns%2Cop_eLocation: https://kindle.amazon.com:443nsLocation: https://kindle.amazon.com:4h_

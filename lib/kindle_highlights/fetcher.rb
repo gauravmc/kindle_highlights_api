@@ -7,14 +7,19 @@ module KindleHighlights
     end
 
     def fetch
-      fetch_books_from_page(get_highlights_page)
+      fetch_all_books
     end
 
     private
 
-    def fetch_books_from_page(page)
+    def fetch_all_books
+      page = get_highlights_page
       books = []
-      books << Book.from_page(page)
+
+      while next_book_link = page.link(id: 'nextBookLink') do
+        books << Book.from_page(page)
+        page = next_book_link.click
+      end
       books
     end
 
