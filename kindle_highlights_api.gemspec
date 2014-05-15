@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'kindle_highlights/version'
+require 'kindle_highlights_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "kindle_highlights"
-  spec.version       = KindleHighlights::VERSION
+  spec.name          = "kindle_highlights_api"
+  spec.version       = KindleHighlightsAPI::VERSION
   spec.authors       = ["Gaurav Chande"]
   spec.email         = ["gmail@gauravchande.com"]
   spec.summary       = %q{A wrapper that helps fetch Kindle highlights and play around with them.}
-  spec.homepage      = "https://github.com/gauravmc/kindle_highlights"
+  spec.homepage      = "https://github.com/gauravmc/kindle_highlights_api"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

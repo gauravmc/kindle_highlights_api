@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module KindleHighlights
+module KindleHighlightsAPI
   class FetcherTest < MiniTest::Unit::TestCase
     def test_fetch_returns_an_array_of_all_the_books
       fetcher = Fetcher.new('some@email.com', 'password')

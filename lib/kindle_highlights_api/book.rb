@@ -1,4 +1,4 @@
-module KindleHighlights
+module KindleHighlightsAPI
   class Book
     def initialize(page)
       @page = page

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-module KindleHighlights
+module KindleHighlightsAPI
   class BookTest < MiniTest::Unit::TestCase
     def test_from_page_creates_a_book_from_the_page
       expectation = {

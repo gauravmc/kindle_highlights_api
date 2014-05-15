@@ -1,7 +1,7 @@
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 
 require 'minitest/autorun'
-require 'kindle_highlights'
+require 'kindle_highlights_api'
 require 'pry'
 require 'mocha/mini_test'
 require 'pry-rescue/minitest'

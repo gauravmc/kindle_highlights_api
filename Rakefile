@@ -8,9 +8,9 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = true
 end
 
-desc 'run kindle_highlights console'
+desc 'run kindle_highlights_api console'
 task :console do
-  exec 'pry -I lib -r kindle_highlights'
+  exec 'pry -I lib -r kindle_highlights_api'
 end
 
 task default: :test

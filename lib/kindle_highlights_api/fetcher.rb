@@ -1,6 +1,6 @@
 require 'mechanize'
 
-module KindleHighlights
+module KindleHighlightsAPI
   class Fetcher
     def initialize(email, password)
       @email, @password = email, password
