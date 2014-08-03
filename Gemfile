@@ -7,6 +7,7 @@ group :development, :test do
   gem 'mocha'
   gem 'fakeweb'
   gem 'pry'
+  gem 'pry-doc'
   gem 'pry-debugger'
   gem 'pry-rescue'
   gem 'pry-stack_explorer'
