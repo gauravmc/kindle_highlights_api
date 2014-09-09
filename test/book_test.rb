@@ -15,6 +15,18 @@ module KindleHighlightsAPI
       assert book.highlights.include?(expectation[:highlight])
     end
 
+    def test_highlights_with_location
+      expectation = {
+        content: "learning to draw, without doubt, causes new connections in the brain that can be useful over a lifetime for general thinking. Learning to see in a different way requires that you use your brain differently.",
+        location: "kindle://book?action=open&asin=B005GSYXU4&location=486"
+      }
+
+      page = create_page_from_fixture(:highlights_page_1)
+      book = Book.from_page(page)
+
+      assert book.highlights_with_location.include?(expectation)
+    end
+
     private
 
     def create_page_from_fixture(filename)
