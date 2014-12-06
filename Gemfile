@@ -8,7 +8,6 @@ group :development, :test do
   gem 'fakeweb'
   gem 'pry'
   gem 'pry-doc'
-  gem 'pry-debugger'
-  gem 'pry-rescue'
+  gem 'pry-byebug'
   gem 'pry-stack_explorer'
 end

@@ -4,7 +4,6 @@ require 'minitest/autorun'
 require 'kindle_highlights_api'
 require 'pry'
 require 'mocha/mini_test'
-require 'pry-rescue/minitest'
 require 'fakeweb'
 
 TEST_ROOT = File.expand_path('..', __FILE__)
