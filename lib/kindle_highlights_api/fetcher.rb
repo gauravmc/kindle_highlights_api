@@ -45,8 +45,6 @@ module KindleHighlightsAPI
         a.user_agent_alias = 'Mac Safari'
         a.open_timeout = 10
         a.read_timeout = 10
-        a.ssl_version = 'SSLv3'
-        a.verify_mode = OpenSSL::SSL::VERIFY_NONE
       end
     end
   end
