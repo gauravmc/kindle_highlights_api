@@ -8,6 +8,13 @@ require 'fakeweb'
 
 TEST_ROOT = File.expand_path('..', __FILE__)
 
+module FakeWeb
+  class StubSocket
+    def read_timeout=(ignored)
+    end
+  end
+end
+
 def mock_web_requests
   FakeWeb.allow_net_connect = false
 

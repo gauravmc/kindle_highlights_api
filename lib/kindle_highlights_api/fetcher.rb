@@ -6,22 +6,24 @@ module KindleHighlightsAPI
       @email, @password = email, password
     end
 
-    def fetch
-      fetch_all_books
-    end
-
-    private
-
-    def fetch_all_books
-      page = get_highlights_page
-
+    def fetch_all
       Array.new.tap do |books|
-        while next_book_link = page.link(id: 'nextBookLink') do
-          books << Book.from_page(page)
-          page = next_book_link.click
+        fetch_each do |book|
+          books << book
         end
       end
     end
+
+    def fetch_each
+      page = get_highlights_page
+
+      while next_book_link = page.link(id: 'nextBookLink') do
+        yield Book.from_page(page)
+        page = next_book_link.click
+      end
+    end
+
+    private
 
     def get_highlights_page
       kindle_home_page = login_to_amazon_kindle
