@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = KindleHighlightsAPI::VERSION
   spec.authors       = ["Gaurav Chande"]
   spec.email         = ["gmail@gauravchande.com"]
-  spec.summary       = %q{A wrapper that helps fetch Kindle highlights and play around with them.}
+  spec.summary       = %q{A small library that helps fetch book highlights from Amazon's Kindle service.}
   spec.homepage      = "https://github.com/gauravmc/kindle_highlights_api"
   spec.license       = "MIT"
 
