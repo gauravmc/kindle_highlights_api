@@ -23,7 +23,7 @@ require 'kindle_highlights_api'
 
 fetcher = KindleHighlightsAPI::Fetcher.new("yourusername@gmail.com", "somepassword")
 
-books = fetcher.fetch
+books = fetcher.fetch_all
 
 books.count # =>
 19
