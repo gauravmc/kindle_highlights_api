@@ -5,6 +5,7 @@ gemspec
 
 group :development, :test do
   gem 'mocha'
+  gem 'minitest'
   gem 'fakeweb'
   gem 'pry'
   gem 'pry-doc'
